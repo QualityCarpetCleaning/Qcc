@@ -1,0 +1,388 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #def3f9;
+    color: #333;
+    font-weight: bold;
+}
+
+header {
+    background-color: #004c3f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #333;
+    border: 2px solid #999;
+    margin-left: auto;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: none;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 2px solid #999;
+    border-radius: 8px;
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    z-index: 999;
+    text-align: left;
+}
+.nav-container {
+    position: relative;
+}
+    .nav-menu a {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        font-weight: bold;
+    }
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+    .nav-links li {
+        display: block;
+    }
+
+    .nav-links a:link {
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+    }
+
+    .nav-links a:visited {
+        color: purple;
+    }
+
+    .nav-links a:hover {
+        color: #00392f;
+        text-decoration: underline;
+    }
+
+    .nav-links a:active {
+        color: red;
+    }
+
+/* Hero Section */
+.hero {
+    font-size: 20px;
+    padding: 50px 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #def3f9;
+}
+
+.btn {
+    background-color: #64ceed;
+    color: Blue;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 20px;
+    background-color: #64ceed;
+    text-align: center;
+    font-size: 30px 0;
+    font-weight: normal;
+}
+.main-heading {
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #004c3f;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+/* Review Box Styling */
+.review-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    box-sizing: border-box;
+    min-width: 200px;
+    text-align: left;
+}
+
+    .review-box blockquote {
+        font-style: italic;
+        color: #555;
+        margin: 0;
+    }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links a {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .review-box {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+    .nav-menu {
+        width: 100%;
+        left: 0;
+    }
+    .menu-toggle {
+        position: static;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+#contact {
+    font-size: 25px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    #contact p {
+        font-size: 25px;
+    }
+
+#testimonials {
+    font-size: 18px;
+    background-color: #def3f9;
+}
+
+    #testimonials h2 {
+        font-size: 28px;
+    }
+
+#about {
+    font-size: 18px;
+    background-color: #def3f9;
+}
+
+    #about h2 {
+        font-size: 28px;
+    }
+
+
+#services {
+    font-size: 23px;
+    background-color: transparent;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+    #services h2 {
+        font-size: 31px;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+
+    }
+
+    /* Center the list and align bullets properly */
+    #services ul {
+        list-style-position: inside;
+        padding: 0;
+        margin: 20px auto 0 auto;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #services li {
+        padding: 5px 0;
+    }
+    #services .container h2,
+    #services .container p,
+    #services .container li {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+
+
+* {
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+
+#about .container {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+#services .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 0 auto;
+    max-width: auto;
+    background-image: url('QCC1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.divider {
+    width: 60%;
+    margin: 10px auto;
+    border: 0;
+    height: 2px;
+    background-color: #000000;
+    opacity: 0.8;
+}
+/* Center content and make it bold */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style form elements */
+#review-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #review-form label,
+    #review-form input,
+    #review-form textarea,
+    #review-form button {
+        width: 100%;
+        max-width: 500px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    #review-form input,
+    #review-form textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    #review-form button {
+        background-color: #64ceed;
+        color: #004c3f;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+
+        #review-form button:hover {
+            background-color: #4ab5d2;
+        }
+
+/* Review list styles */
+#review-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #review-list li {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+    }
+
